@@ -105,7 +105,6 @@ for e in range(epoch):
         l.backward()
         op.step()
 
-        # Validation loss
         print(f'epoch: {e} / {epoch} batch: {i} / {len(loader)} loss: {l}')
      
     # Training loss over the entire dataset
@@ -115,9 +114,9 @@ for e in range(epoch):
     # Early stoping
     vl = loss(model(valid_x).view(-1, 5), valid_y)
     vls.append(vl.item())
-#    if es.check(vl):
-#        print('Early stops now!')
-#        break
+    if es.check(vl):
+        print('Early stops now!')
+        break
 
 # Serialize trained model
 torch.save(model.state_dict(), f'model_{lr}.pt')
