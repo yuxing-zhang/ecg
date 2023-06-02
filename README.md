@@ -2,7 +2,7 @@
 
 To reproduce my results, follow the steps:
 
-1. Download ECG data from [Kaggle](https://www.kaggle.com/datasets/shayanfazeli/heartbeat)
+1. Clone the project. Create an data directory with `mkdir data` and download ECG data from [Kaggle](https://www.kaggle.com/datasets/shayanfazeli/heartbeat) to it.
 
 2. Run src/data/create\_dataset.py. This creates numpy arrays holding the training, validation and test data, and trims the sequences to a length of 160.
 
