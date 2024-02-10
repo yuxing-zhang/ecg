@@ -1,6 +1,6 @@
-# Take-Home Technical Test: ECG Heartbeat Categorization
+# Electrocardiogram (ECG) signals categorization
 
-To reproduce my results, follow the steps:
+This project tries to classify ECG signals using a 1-D convolutional neural network. The training data is preprocessed and segmented but unbalanced. To reproduce my results, follow the steps:
 
 1. Clone the project. Create an data directory with `mkdir data` and download ECG data from [Kaggle](https://www.kaggle.com/datasets/shayanfazeli/heartbeat) to it.
 
